@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uur.firebaseloginapp.DevlerLigiLoginActivity"
+    android:id="@+id/loginLayout">
+
+    <ImageView
+        android:id="@+id/road_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/back_image" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/location_icon" />
+
+    <!--<EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Email"
+        android:inputType="textPersonName" />-->
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:id="@+id/emailLayout"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:hint="Email"
+            android:ems="10"
+            android:textColor="#0A0B12"
+            android:id="@+id/emailEditText"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <!--<EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/emailEditText"
+        android:layout_below="@+id/emailEditText"
+        android:hint="Password"
+        android:inputType="textPassword" />-->
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@android:color/white"
+        android:layout_below="@+id/emailLayout"
+        android:id="@+id/passwordLayout"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:ems="10"
+            android:textColor="#0A0B12"
+            android:id="@+id/passwordEditText"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/passwordLayout"
+        android:layout_below="@+id/passwordLayout"
+        android:background="#0489B1"
+        android:textColor="@color/cardview_light_background"
+        android:text="Sign In" />
+
+
+    <LinearLayout
+        android:id="@+id/faceLayout"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/signInButton"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:layout_alignStart="@+id/passwordEditText">
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/facebookLoginButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/twitterLayout"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/faceLayout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/passwordEditText">
+
+        <com.twitter.sdk.android.core.identity.TwitterLoginButton
+            android:id="@+id/twitterLoginButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

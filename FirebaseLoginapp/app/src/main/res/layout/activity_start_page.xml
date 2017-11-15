@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uur.firebaseloginapp.StartPageActivity">
+
+    <Button
+        android:id="@+id/emailVerifyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="31dp"
+        android:text="Email/Password Verify " />
+
+    <Button
+        android:id="@+id/phoneVerifyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/emailVerifyButton"
+        android:text="phone verify " />
+
+    <Button
+        android:id="@+id/googleVerifyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/phoneVerifyButton"
+        android:text="google verify " />
+
+    <Button
+        android:id="@+id/facebookVerifyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/googleVerifyButton"
+        android:text="facebook verify " />
+
+    <Button
+        android:id="@+id/twitterVerifyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/facebookVerifyButton"
+        android:text="twitter verify " />
+
+    <Button
+        android:id="@+id/githubVerifyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/twitterVerifyButton"
+        android:text="github verify " />
+
+    <Button
+        android:id="@+id/anonimVerifyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/githubVerifyButton"
+        android:text="anonim verify " />
+</RelativeLayout>

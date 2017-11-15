@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uur.firebaseloginapp.DevlerLigiRegister"
+    android:id="@+id/registerRelLayout">
+
+
+    <ImageView
+        android:id="@+id/road_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/back_image" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/location_icon" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:hint="Username"/>
+
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameEditText"
+        android:layout_centerHorizontal="true"
+        android:hint="Name"/>
+
+    <EditText
+        android:id="@+id/surnameEditText"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nameEditText"
+        android:layout_below="@+id/nameEditText"
+        android:hint="Surname" />
+
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/surnameEditText"
+        android:layout_below="@+id/surnameEditText"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:digits="0123456789+"/>
+
+
+    <EditText
+        android:id="@+id/birthdateEditText"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/phoneEditText"
+        android:layout_below="@+id/phoneEditText"
+        android:clickable="true"
+        android:ems="10"
+        android:hint="Birth Date"
+        android:inputType="date"/>
+
+
+    <LinearLayout
+        android:layout_width="306dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/genderLayout"
+        android:layout_below="@+id/birthdateEditText"
+        android:layout_centerHorizontal="true">
+
+
+        <TextView
+            android:id="@+id/genderTextView"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/phoneEditText"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text=" Gender:"
+            android:textSize="18sp"
+            android:textColor="@color/cardview_light_background"/>
+
+        <Switch
+            android:id="@+id/maleOrFemaleSwitch"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Male"
+            android:ems="10"
+            android:textSize="18sp"
+            android:textColor="@color/cardview_light_background"/>
+
+        <TextView
+            android:id="@+id/femaleText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="Female"
+            android:textSize="18sp"
+            android:textColor="@color/cardview_light_background"/>
+
+       <!-- <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+
+
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="306dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/genderLayout"
+        android:layout_centerHorizontal="true">
+
+
+        <LinearLayout
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="REGISTER"
+                android:textColor="@color/cardview_light_background"
+                android:background="#0489B1"/>
+
+            <Button
+                android:id="@+id/sendVerifyMailBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Send Verify Mail Again"
+                android:textColor="@color/cardview_light_background"
+                android:visibility="gone"
+                android:textAllCaps="true"
+                android:background="#0489B1"/>
+
+        </LinearLayout>
+
+       <!-- <LinearLayout
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+
+            <Button
+                android:id="@+id/continueButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CONTINUE"
+                android:background="@drawable/roundedbutton"
+                android:textColor="@color/cardview_light_background"
+                android:visibility="gone"/>
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+    <!--<com.facebook.login.widget.LoginButton
+        android:id="@+id/button_facebook_login"
+        android:layout_width="342dp"
+        android:layout_height="700dp"
+        android:layout_below="@+id/signInButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@color/grey_300">
+
+        <com.twitter.sdk.android.core.identity.TwitterLoginButton
+            android:id="@+id/button_twitter_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/button_twitter_signout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/sign_out"
+            android:theme="@style/ThemeOverlay.MyDarkButton"
+            android:visibility="gone"/>
+
+    </RelativeLayout>-->
+
+
+</RelativeLayout>
